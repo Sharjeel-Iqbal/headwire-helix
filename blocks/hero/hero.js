@@ -15,16 +15,20 @@ export default function decorate(block) {
       // if (!content.hasChildNodes()) {
       //   content.remove();
       // }
-      // content.querySelectorAll('img').forEach((img) => {
-      //   img.closest('p').className = 'hero-image-container';
-      //   img.className = 'hero-image';
-      //   img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
-      // });
+
     });
   });
 
   block.textContent = '';
   const heroRows = heros.querySelectorAll('div');
+
+  heros.querySelectorAll('img');
+
+  heros.querySelectorAll('img').forEach((img) => {
+    img.closest('p').className = 'hero-image-container';
+    img.className = 'hero-image';
+    img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
+  });
 
   heroRows[0].className = 'hero-heading';
   heroRows[1].className = 'hero-subtitle';
