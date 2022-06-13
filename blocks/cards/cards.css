@@ -1,40 +1,50 @@
+.cards-container {
+    @apply text-white;
+    background: 50% 50% / cover no-repeat rgb(54, 90, 139);
+}
+
+.dark.cards-container {
+   background: 50% 50% / cover no-repeat rgb(43, 67, 100);
+}
+
+.cards {
+    @apply pt-[50px] py-[100px] font-raleway;
+}
 
 .cards-row {
-    @apply flex tablet:flex-col;
+    @apply flex mx-auto max-w-[1170px] tablet:flex-col;
 }
 
 .card {
-    @apply w-4/12 m-2 rounded-md  border-slate-500 shadow-xl py-4 px-4 font-raleway;
+    @apply w-4/12 text-center px-8;
     @apply tablet:w-full tablet:flex items-center;
-    @apply mobile:flex-col;
+    @apply mobile:flex-col ;
 }
 
-.card p {
-    @apply font-roboto;
-}
-
-.card .button-container {
-     @apply mb-2;
-}
 .card-image-container {
-    @apply m-0 h-[220px];
-    @apply tablet:flex tablet:w-[40%] tablet:mr-4;
-    @apply mobile:w-full mobile:mr-0;
+    @apply w-4/12 mx-auto mb-8;
+
 }
 
-.card-image-container picture {
-    @apply tablet:w-full;
-}
-
-.card-content {
-    @apply tablet:w-[60%];
-    @apply mobile:w-full;
+.dark .card-image-container {
+    @apply w-[40%];
 }
 
 .card-image-container img {
-    @apply w-full h-full;
+    @apply w-full h-auto;
 }
 
-.dark.cards-container .card {
-    @apply bg-gray-900 text-white;
+
+.card-heading {
+    @apply text-[30px]  mb-8;
+}
+
+.card-description {
+    @apply text-[16px];
+}
+
+
+
+.card-description a {
+    @apply text-[#da7b40];
 }

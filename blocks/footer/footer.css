@@ -12,3 +12,8 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+.footer-wrapper {
+  background: 50% 50% / cover no-repeat rgb(34, 34, 34);
+  @apply text-center text-white;
+}

@@ -216,7 +216,26 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+.cards-container {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity) );
+  background: #365a8b 50% / cover no-repeat;
+}
+
+.dark.cards-container {
+  background: #2b4364 50% / cover no-repeat;
+}
+
+.cards {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: Raleway, sans-serif;
+}
+
 .cards-row {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
@@ -227,18 +246,11 @@ img, video {
 }
 
 .card {
-  --tw-border-opacity: 1;
-  --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  border-color: rgb(100 116 139 / var(--tw-border-opacity) );
-  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  text-align: center;
   width: 33.3333%;
-  border-radius: .375rem;
   align-items: center;
-  margin: .5rem;
-  padding: 1rem;
-  font-family: Raleway, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media (max-width: 1199.98px) {
@@ -254,60 +266,34 @@ img, video {
   }
 }
 
-.card p {
-  font-family: Roboto, sans-serif;
-}
-
-.card .button-container {
-  margin-bottom: .5rem;
-}
-
 .card-image-container {
-  height: 220px;
-  margin: 0;
+  width: 33.3333%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 1199.98px) {
-  .card-image-container {
-    width: 40%;
-    margin-right: 1rem;
-    display: flex;
-  }
-}
-
-@media (max-width: 767.97px) {
-  .card-image-container {
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .card-image-container picture {
-    width: 100%;
-  }
-
-  .card-content {
-    width: 60%;
-  }
-}
-
-@media (max-width: 767.97px) {
-  .card-content {
-    width: 100%;
-  }
+.dark .card-image-container {
+  width: 40%;
 }
 
 .card-image-container img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
-.dark.cards-container .card {
-  --tw-bg-opacity: 1;
+.card-heading {
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.card-description {
+  font-size: 16px;
+}
+
+.card-description a {
   --tw-text-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity) );
-  color: rgb(255 255 255 / var(--tw-text-opacity) );
+  color: rgb(218 123 64 / var(--tw-text-opacity) );
 }
 
 main .example {
@@ -332,10 +318,18 @@ footer .footer p {
   margin: 0;
 }
 
-.hero-container {
+.footer-wrapper {
+  text-align: center;
+  background: #222 50% / cover no-repeat;
+}
+
+.footer-wrapper, .hero-container {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity) );
-  background: url("https://www.headwire.com/content/headwire/assets/site/heading-image.webp") 0 0 / cover no-repeat;
+}
+
+.hero-container {
+  background: url("https://www.headwire.com/content/headwire/assets/site/heading-image.webp") 0 100% / cover no-repeat;
   padding: 130px 20px 181px;
   font-family: Raleway, sans-serif;
 }

@@ -1,5 +1,5 @@
 .hero-container {
-    background: url('https://www.headwire.com/content/headwire/assets/site/heading-image.webp');
+    background: url('https://www.headwire.com/content/headwire/assets/site/heading-image.webp') 0% 100%;
     @apply px-[20px] pt-[130px] py-[181px] bg-no-repeat bg-cover text-white font-raleway;
 }
 
