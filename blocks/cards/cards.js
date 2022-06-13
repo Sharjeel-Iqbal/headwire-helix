@@ -32,12 +32,12 @@ export default function decorate(block) {
     card.className = 'card';
   });
 
-  const contentDescription = document.querySelectorAll('.card-content p');
-  if (contentDescription.length > 0) {
-    for (let i = 0; i < contentDescription.length; i += 1) {
-      contentDescription[i].className = 'card-description';
-    }
-  }
+  // const contentDescription = document.querySelectorAll('.card-content p');
+  // if (contentDescription.length > 0) {
+  //   for (let i = 0; i < contentDescription.length; i += 1) {
+  //     contentDescription[i].className = 'card-description';
+  //   }
+  // }
 
   block.textContent = '';
   block.append(cards);
