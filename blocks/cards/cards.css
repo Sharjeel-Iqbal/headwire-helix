@@ -8,18 +8,24 @@
 }
 
 .cards {
-    @apply pt-[50px] py-[100px] font-raleway;
+    @apply pt-[50px] pb-[100px] font-raleway;
+    @apply mobile:pb-5;
 }
 
 .cards-row {
-    @apply flex mx-auto max-w-[1170px] tablet:flex-col;
+    @apply flex mx-auto max-w-[1170px] mobile:flex-col;
 }
 
 .card {
     @apply w-4/12 text-center px-8;
-    @apply tablet:w-full tablet:flex items-center;
-    @apply mobile:flex-col ;
+    @apply tablet:w-full items-center;
+    @apply mobile:flex-col mobile:mb-[40px] border-b border-gray-300 pb-10;
 }
+.card:last-child {
+    @apply border-0;
+}
+
+
 
 .card-image-container {
     @apply w-4/12 mx-auto mb-8;
@@ -28,6 +34,7 @@
 
 .dark .card-image-container {
     @apply w-[40%];
+    @apply mobile:w-[100px];
 }
 
 .card-image-container img {
@@ -39,12 +46,12 @@
     @apply text-[30px]  mb-8;
 }
 
-.card-description {
+.card p {
     @apply text-[16px];
 }
 
 
 
-.card-description a {
+.card p a {
     @apply text-[#da7b40];
 }

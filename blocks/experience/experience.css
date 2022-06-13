@@ -12,6 +12,7 @@
 
 .experience-image-container {
   @apply mr-5 w-1/4;
+  @apply tablet:hidden;
 }
 
 .experience h2 {
