@@ -1,3 +1,5 @@
+import { createOptimizedPicture } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   const heros = document.createElement('div');
   heros.className = 'hero';
@@ -12,15 +14,17 @@ export default function decorate(block) {
       if (!content.hasChildNodes()) {
         content.remove();
       }
-      content.querySelectorAll('picture').forEach((element) => {
-        element.closest('p').className = 'hero-image-container';
-        element.querySelector('img').className = 'hero-image';
+      content.querySelectorAll('img').forEach((img) => {
+        img.closest('p').className = 'hero-image-container';
+        img.className = 'hero-image';
+        img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
       });
     });
   });
 
   block.textContent = '';
   const heroRows = heros.querySelectorAll('div');
+
   heroRows[0].className = 'hero-heading';
   heroRows[1].className = 'hero-subtitle';
   block.append(heros);

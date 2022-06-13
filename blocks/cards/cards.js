@@ -11,7 +11,9 @@ export default function decorate(block) {
   });
 
   [...cards.children].forEach((card) => {
-    card.querySelector('picture').closest('p').className = 'card-image-container';
+    const img = card.querySelector('img');
+    img.closest('p').className = 'card-image-container';
+    img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
     const contentBlock = document.createElement('div');
     card.querySelector('h2').className = 'card-heading';
     // Store title description inside a div separating itself from the picture
