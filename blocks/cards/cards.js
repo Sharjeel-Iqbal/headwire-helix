@@ -11,6 +11,7 @@ export default function decorate(block) {
   });
 
   [...cards.children].forEach((card) => {
+    console.log(card);
     const img = card.querySelector('img');
     img.closest('p').className = 'card-image-container';
     img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
@@ -22,20 +23,21 @@ export default function decorate(block) {
         contentBlock.append(content);
       }
       // Removes unneeded nodes and paragraph tags.
-      // if (!content.hasChildNodes()) {
-      //   content.remove();
-      // }
+      if (!content.hasChildNodes()) {
+        content.remove();
+      }
     });
     contentBlock.className = 'card-content';
-    const contentDescription = contentBlock.querySelectorAll('p');
-    if (contentDescription.length > 0) {
-      // for (let i = 0; i < contentDescription.length; i += 1) {
-      //   contentDescription[i].className = 'card-description';
-      // }
-    }
     card.append(contentBlock);
     card.className = 'card';
   });
+
+  const contentDescription = document.querySelectorAll('.card-content p');
+  if (contentDescription.length > 0) {
+    for (let i = 0; i < contentDescription.length; i += 1) {
+      contentDescription[i].className = 'card-description';
+    }
+  }
 
   block.textContent = '';
   block.append(cards);
