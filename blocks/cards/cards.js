@@ -22,9 +22,9 @@ export default function decorate(block) {
         contentBlock.append(content);
       }
       // Removes unneeded nodes and paragraph tags.
-      if (!content.hasChildNodes()) {
-        content.remove();
-      }
+      // if (!content.hasChildNodes()) {
+      //   content.remove();
+      // }
     });
     contentBlock.className = 'card-content';
     const contentDescription = contentBlock.querySelectorAll('p');

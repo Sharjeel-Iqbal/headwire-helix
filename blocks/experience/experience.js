@@ -6,17 +6,6 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     experience.innerHTML += row.innerHTML;
   });
-  [...experience.children].forEach((row) => {
-    if (!row.hasChildNodes()) {
-      row.remove();
-    }
-    [...row.children].forEach((content) => {
-      if (!content.hasChildNodes()) {
-        content.remove();
-      }
-    });
-  });
-
   block.textContent = '';
   const experienceRows = experience.querySelectorAll('div');
   experienceRows[0].className = 'experience-image-container';

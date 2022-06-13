@@ -7,13 +7,14 @@ export default function decorate(block) {
     heros.innerHTML += row.innerHTML;
   });
   [...heros.children].forEach((row) => {
-    if (!row.hasChildNodes()) {
-      row.remove();
-    }
+    // console.log(row);
+    // if (!row.hasChildNodes()) {
+    //   row.remove();
+    // }
     [...row.children].forEach((content) => {
-      if (!content.hasChildNodes()) {
-        content.remove();
-      }
+      // if (!content.hasChildNodes()) {
+      //   content.remove();
+      // }
       content.querySelectorAll('img').forEach((img) => {
         img.closest('p').className = 'hero-image-container';
         img.className = 'hero-image';
