@@ -6,4 +6,11 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
+  .eyebrow::after {
+    content: '';
+    @apply absolute w-10 h-2 bg-black;
+    bottom: -20px;
+    left: 0px;
+  }
 }

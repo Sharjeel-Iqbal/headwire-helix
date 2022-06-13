@@ -1,0 +1,42 @@
+.blog-article-container {
+  @apply py-[50px]
+}
+
+.blog-article-heading {
+  @apply relative eyebrow mb-8;
+}
+
+
+.blog-article-heading h1,
+.blog-article-heading h3 {
+  @apply font-roboto;
+}
+
+.blog-article-heading h1 {
+  @apply text-4xl;
+}
+
+.blog-article-heading h3 {
+  @apply text-2xl;
+}
+
+.blog-article-heading p {
+  @apply text-[#777] font-raleway;
+}
+
+.blog-article-heading p em {
+  @apply text-black;
+}
+
+.blog-article-content {
+
+  @apply px-8 mt-8;
+}
+
+.blog-cited {
+  @apply flex;
+}
+
+.blog-cited p {
+  @apply mr-2;
+}

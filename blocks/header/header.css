@@ -1,0 +1,62 @@
+header {
+  @apply hidden;
+}
+
+.header-container  {
+  @apply w-full h-[156px] absolute py-4 overflow-hidden bg-50% bg-cover bg-no-repeat;
+}
+
+.header-wrapper,
+.header,
+.header img {
+  @apply h-full;
+}
+
+.header div {
+  @apply w-full;
+}
+
+.header img,
+.header  {
+  @apply w-full;
+}
+
+.header > div > div > p {
+  @apply w-full m-0;
+}
+
+.header > div > div:first-child {
+  @apply w-[115px] m-8;
+}
+
+.header > div {
+  @apply flex items-center;
+}
+
+.header .button-container {
+  @apply flex items-center text-white !important;
+}
+
+.header .button-container .button {
+  @apply text-white;
+}
+
+.header .button-container .button:hover {
+  @apply text-ez-aem-blue;
+}
+
+.header ul {
+  @apply flex gap-x-10 items-center;
+}
+.header li::marker {
+  @apply flex items-start;
+  content: '';
+}
+
+.header a {
+  @apply text-white;
+}
+
+.header a:hover {
+  @apply no-underline text-ez-aem-blue;
+}

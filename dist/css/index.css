@@ -344,16 +344,94 @@ footer .footer p {
 }
 
 .footer-wrapper {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity) );
   text-align: center;
   background: #222 50% / cover no-repeat;
 }
 
-.footer-wrapper, .hero-container {
+header {
+  display: none;
+}
+
+.header-container {
+  height: 156px;
+  width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  overflow: hidden;
+}
+
+.header, .header img, .header-wrapper {
+  height: 100%;
+}
+
+.header, .header div, .header img {
+  width: 100%;
+}
+
+.header > div > div > p {
+  width: 100%;
+  margin: 0;
+}
+
+.header > div > div:first-child {
+  width: 115px;
+  margin: 2rem;
+}
+
+.header > div {
+  align-items: center;
+  display: flex;
+}
+
+.header .button-container {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity) ) !important;
+  align-items: center !important;
+  display: flex !important;
+}
+
+.header .button-container .button {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity) );
 }
 
+.header .button-container .button:hover {
+  --tw-text-opacity: 1;
+  color: rgb(54 90 139 / var(--tw-text-opacity) );
+}
+
+.header ul {
+  align-items: center;
+  column-gap: 2.5rem;
+  display: flex;
+}
+
+.header li::marker {
+  content: "";
+  align-items: flex-start;
+  display: flex;
+}
+
+.header a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity) );
+}
+
+.header a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(54 90 139 / var(--tw-text-opacity) );
+  text-decoration-line: none;
+}
+
 .hero-container {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity) );
   background: url("https://www.headwire.com/content/headwire/assets/site/heading-image.webp") 0 100% / cover no-repeat;
   padding: 130px 20px 181px;
   font-family: Raleway, sans-serif;
@@ -441,6 +519,66 @@ footer .footer p {
 
 .experience-content p {
   margin-bottom: 1rem;
+}
+
+.blog-article-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blog-article-heading:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity) );
+  content: "";
+  height: .5rem;
+  width: 2.5rem;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.blog-article-heading {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.blog-article-heading h1, .blog-article-heading h3 {
+  font-family: Roboto, sans-serif;
+}
+
+.blog-article-heading h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.blog-article-heading h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.blog-article-heading p {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity) );
+  font-family: Raleway, sans-serif;
+}
+
+.blog-article-heading p em {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity) );
+}
+
+.blog-article-content {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.blog-cited {
+  display: flex;
+}
+
+.blog-cited p {
+  margin-right: .5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

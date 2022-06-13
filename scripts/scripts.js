@@ -35,6 +35,7 @@ export function sampleRUM(checkpoint, data = {}) {
       const sendPing = () => {
         // eslint-disable-next-line object-curly-newline, max-len, no-use-before-define
         const body = JSON.stringify({ weight, id, referer: window.location.href, generation: RUM_GENERATION, checkpoint, ...data });
+        console.log(body);
         const url = `https://rum.hlx.page/.rum/${weight}`;
         // eslint-disable-next-line no-unused-expressions
         navigator.sendBeacon(url, body);
@@ -626,6 +627,7 @@ window.addEventListener('load', () => sampleRUM('load'));
 document.addEventListener('click', () => sampleRUM('click'));
 
 loadPage(document);
+console.log(document);
 
 function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
@@ -666,9 +668,11 @@ export function decorateMain(main) {
 /**
  * loads everything needed to get to LCP.
  */
+
 async function loadEager(doc) {
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
+  console.log(doc);
   if (main) {
     decorateMain(main);
     await waitForLCP();
