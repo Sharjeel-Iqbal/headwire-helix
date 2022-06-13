@@ -1,0 +1,23 @@
+.experience-container {
+  background: url('https://www.headwire.com/content/headwire/assets/site/background-pattern.webp');
+}
+
+.experience {
+  @apply pt-[100px] pb-[50px] px-5 font-raleway text-[#777] max-w-[1170px] mx-auto;
+}
+
+.experience-row {
+  @apply flex-center;
+}
+
+.experience-image-container {
+  @apply mr-5 w-1/4;
+}
+
+.experience h2 {
+  @apply text-[36px] mb-6;
+}
+
+.experience-content p {
+  @apply mb-4;
+}
