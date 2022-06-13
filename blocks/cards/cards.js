@@ -29,9 +29,9 @@ export default function decorate(block) {
     contentBlock.className = 'card-content';
     const contentDescription = contentBlock.querySelectorAll('p');
     if (contentDescription.length > 0) {
-      for (let i = 0; i < contentDescription.length; i += 1) {
-        contentDescription[i].className = 'card-description';
-      }
+      // for (let i = 0; i < contentDescription.length; i += 1) {
+      //   contentDescription[i].className = 'card-description';
+      // }
     }
     card.append(contentBlock);
     card.className = 'card';
