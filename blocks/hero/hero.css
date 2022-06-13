@@ -8,9 +8,18 @@
 }
 
 .hero-heading {
-    @apply flex-center  mb-8 text-[50px];
+    @apply flex-center  mb-8;
+}
+
+.hero-image-container {
+    @apply mobile:w-[75px];
+}
+
+.hero-heading h1 {
+    @apply text-[50px] mobile:text-[30px];
 }
 
 .hero-subtitle {
-    @apply flex-center text-[25px];
+    @apply flex-center text-[25px] text-center;
+    @apply mobile:text-[20px];
 }
