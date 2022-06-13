@@ -7,15 +7,13 @@ export default function decorate(block) {
     heros.innerHTML += row.innerHTML;
   });
   [...heros.children].forEach((row) => {
-    // console.log(row);
-    // if (!row.hasChildNodes()) {
-    //   row.remove();
-    // }
+    if (!row.hasChildNodes()) {
+      row.remove();
+    }
     [...row.children].forEach((content) => {
-      // if (!content.hasChildNodes()) {
-      //   content.remove();
-      // }
-
+      if (!content.hasChildNodes()) {
+        content.remove();
+      }
     });
   });
 
