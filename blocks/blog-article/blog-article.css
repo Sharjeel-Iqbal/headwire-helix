@@ -3,7 +3,7 @@
 }
 
 .blog-article-heading {
-  @apply relative eyebrow mb-8;
+  @apply relative;
 }
 
 
@@ -13,7 +13,7 @@
 }
 
 .blog-article-heading h1 {
-  @apply text-4xl;
+  @apply text-4xl eyebrow mb-8 relative;
 }
 
 .blog-article-heading h3 {
