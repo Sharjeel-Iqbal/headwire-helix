@@ -11,6 +11,10 @@
  */
 
 
+body {
+  @apply relative;
+}
+
 .section {
   @apply px-5;
 }

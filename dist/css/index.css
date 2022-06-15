@@ -216,6 +216,10 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+body {
+  position: relative;
+}
+
 .section {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
