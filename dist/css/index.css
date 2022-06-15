@@ -322,15 +322,12 @@ img, video {
 }
 
 main .example {
+  background-color: var(--overlay-background-color);
   padding: 1em;
 }
 
-footer, main .example {
-  background-color: var(--overlay-background-color);
-}
-
 footer {
-  font-size: var(--body-font-size-s);
+  margin-top: 438px;
   padding: 2rem;
   position: absolute;
   bottom: 0;
