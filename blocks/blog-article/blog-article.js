@@ -7,7 +7,9 @@ export default function decorate(block) {
   });
 
   blogArticle.querySelector('div').className = 'blog-article-heading';
-  blogArticle.querySelector('div:not(:nth-child(1))').className = 'blog-article-content';
+  blogArticle.querySelectorAll('div:not(:nth-child(1))').forEach((element) => {
+    element.className = 'blog-article-content';
+  });
 
   [...blogArticle.children].forEach((row) => {
     if (!row.hasChildNodes()) {
