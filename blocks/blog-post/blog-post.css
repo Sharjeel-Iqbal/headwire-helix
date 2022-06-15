@@ -1,0 +1,23 @@
+.blog > div {
+  @apply flex items-center;
+}
+
+.blog {
+  @apply font-raleway text-black;
+}
+
+.button {
+  @apply p-2 rounded-2xl border-2 border-cyan-400 border-solid text-cyan-400 bg-transparent;
+}
+
+.blog-wrapper {
+  @apply bg-white p-5 rounded-md overflow-hidden shadow shadow-slate-600;
+}
+
+.blog > div p {
+  @apply text-base;
+}
+
+.blog > div > p {
+  @apply m-6;
+}

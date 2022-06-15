@@ -606,4 +606,50 @@ ul {
   list-style-type: disc;
 }
 
+.blog > div {
+  align-items: center;
+  display: flex;
+}
+
+.blog {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity) );
+  font-family: Raleway, sans-serif;
+}
+
+.button {
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 1;
+  border-color: rgb(34 211 238 / var(--tw-border-opacity) );
+  color: rgb(34 211 238 / var(--tw-text-opacity) );
+  background-color: #0000;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.blog-wrapper {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  --tw-shadow-color: #475569;
+  --tw-shadow: var(--tw-shadow-colored);
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity) );
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: .375rem;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.blog > div p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.blog > div > p {
+  margin: 1.5rem;
+}
+
 /*# sourceMappingURL=index.css.map */
