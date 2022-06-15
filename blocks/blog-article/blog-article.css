@@ -1,5 +1,5 @@
 .blog-article-container {
-  @apply py-[50px]
+  @apply py-[50px] px-[100px];
 }
 
 .blog-article-heading {
@@ -29,7 +29,11 @@
 }
 
 .blog-article-content {
-  @apply px-8 mt-8 flex;
+  @apply px-8 mt-8;
+}
+
+.blog-article-content p {
+  @apply flex items-center gap-8;
 }
 
 .blog-cited {
@@ -38,4 +42,12 @@
 
 .blog-cited p {
   @apply mr-2;
+}
+
+.blog-content-picture {
+  @apply p-20;
+}
+
+ul {
+ @apply list-disc;
 }

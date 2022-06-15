@@ -4,7 +4,7 @@
 }
 
 .hero {
-    @apply flex-col justify-center items-center;
+    @apply flex-col justify-center items-center mt-12;
 }
 
 .hero-heading {

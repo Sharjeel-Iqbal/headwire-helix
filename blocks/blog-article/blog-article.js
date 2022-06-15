@@ -7,6 +7,9 @@ export default function decorate(block) {
   });
 
   blogArticle.querySelector('div').className = 'blog-article-heading';
+  // blogArticle.querySelectorAll('picture').forEach((element) => {
+  //   element.closest('p').className = 'blog-content-img';
+  // });
   blogArticle.querySelectorAll('div:not(:nth-child(1))').forEach((element) => {
     element.className = 'blog-article-content';
   });
@@ -32,18 +35,3 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(blogArticle);
 }
-
-// export default function decorate(block) {
-//   const header = document.createElement('div');
-//   header.className = 'header-row';
-
-//   [...block.children].forEach((row) => {
-//     header.innerHTML += row.innerHTML;
-//   });
-//   [...header.children].forEach((element) => {
-//     if (!element.hasChildNodes()) {
-//       element.remove();
-//     }
-//     element.querySelector('p').className = 'header-icon';
-//   });
-// }
