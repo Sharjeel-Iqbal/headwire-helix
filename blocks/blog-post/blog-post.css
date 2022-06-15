@@ -6,8 +6,8 @@
   @apply font-raleway text-black;
 }
 
-.button {
-  @apply p-2 rounded-2xl border-2 border-cyan-400 border-solid text-cyan-400 bg-transparent;
+.button-container {
+  @apply  mt-4 text-cyan-400;
 }
 
 .blog-wrapper {
